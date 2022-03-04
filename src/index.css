@@ -1,11 +1,21 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@0;1&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&display=swap');
+
+:root {
+  --space-black: hsl(230, 35%, 7%);
+  --dusty-lavender: hsl(231, 77%, 90%);
+  --starry-white: hsl(0, 0%, 100%);
+
+  /* font-family: "Bellefair", serif; */
+  /* font-family: "Barlow Condensed", sans-serif; */
+  font-family: "Barlow", sans-serif;
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 * {
   margin: 0;
