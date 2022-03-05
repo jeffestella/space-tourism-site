@@ -1,9 +1,13 @@
 import React from 'react';
 import appStyles from './App.module.css';
 
+import Navbar from './components/Navbar';
+
 const App = () => {
     return (
-        <div>Hello World</div>
+        <div>
+            <Navbar />
+        </div>
     );
 }
 
