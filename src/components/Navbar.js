@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import navbarStyles from "./Navbar.module.css";
 
 import BtnNavToggle from './BtnNavToggle';
@@ -6,6 +6,7 @@ import logo from "../assets/shared/logo.svg";
 
 
 const Navbar = () => {
+    const [navOpen, setNavOpen] = useState(false);
     return (
         <header className={navbarStyles.navbarContainer}>
             <img src={logo} alt="logo" />
@@ -17,7 +18,10 @@ const Navbar = () => {
                     <li className={navbarStyles.navListItem}><a className={navbarStyles.navListLink} href="">Technology</a></li>
                 </ul>
             </nav>
-            <BtnNavToggle />
+            <BtnNavToggle 
+                navOpen={navOpen}
+                setNavOpen={setNavOpen}
+            />
         </header>
     );
 }

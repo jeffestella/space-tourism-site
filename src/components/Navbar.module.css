@@ -1,6 +1,9 @@
 .navbarContainer {
-    border: 1px solid red;
-    width: 100vw;
+    /* border: 1px solid red; */
+    background-color: gray;
+    width: 90%;
+    height: 10%;
+    padding: 5%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -16,3 +19,4 @@
     display: block;
     position: absolute;
 }
+

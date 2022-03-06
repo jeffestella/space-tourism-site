@@ -1,12 +1,16 @@
 import React from 'react';
-import btnNavToggle from './BtnNavToggle.module.css';
+import btnNavToggleStyles from './BtnNavToggle.module.css';
 
 import iconHamburger from "../assets/shared/icon-hamburger.svg";
+import iconClose from '../assets/shared/icon-close.svg';
 
-const BtnNavToggle = () => {
+const BtnNavToggle = ({ navOpen, setNavOpen }) => {
     return (
-        <button className={btnNavToggle}>
-            <img src={iconHamburger} alt="menu toggle button" />
+        <button 
+            className={btnNavToggleStyles.btn}
+            onClick={() => {setNavOpen(!navOpen)}}
+        >
+            <img src={`${navOpen ? iconClose : iconHamburger}`} alt="menu toggle button" />
         </button>
     );
 }
