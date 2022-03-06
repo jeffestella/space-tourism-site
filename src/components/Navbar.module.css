@@ -8,15 +8,42 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 
+    position: relative;
+
+}
+
+.hidden {
+    display: none;
 }
 
 .navbar {
-    display: none;
-    position: relative;
-}
-
-.navbar--active {
+    background-color: hsl(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 70%;
     display: block;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
+.navList {
+    padding: 15vh 0 0 15%;
+    list-style: none;
+    counter-set: nav-counter;
+}
+
+.navListLink {
+    color: var(--starry-white);
+    /* font-family: "Barlow Condensed, sans-serif"; */
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.navListLink::before {
+
+    counter-increment: nav-counter;
+    content: "0"counter(nav-counter);
+
+    font-weight: bold;
+}

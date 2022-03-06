@@ -1,10 +1,11 @@
 .btn {
     border: none;
-    background-color: var(--space-black);
+    background-color: hsl(0,0%,100%,0.0);
     width: 50px;
     aspect-ratio: 1/1;
 
     cursor: pointer;
+    z-index: 2;
 }
 
 .hidden {

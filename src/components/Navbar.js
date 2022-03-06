@@ -10,12 +10,20 @@ const Navbar = () => {
     return (
         <header className={navbarStyles.navbarContainer}>
             <img src={logo} alt="logo" />
-            <nav className={navbarStyles.navbar}>
+            <nav className={`${navOpen ? navbarStyles.navbar : navbarStyles.hidden }`}>
                 <ul className={navbarStyles.navList}>
-                    <li className={navbarStyles.navListItem}><a className={navbarStyles.navListLink} href="">Home</a></li>
-                    <li className={navbarStyles.navListItem}><a className={navbarStyles.navListLink} href="">Destination</a></li>
-                    <li className={navbarStyles.navListItem}><a className={navbarStyles.navListLink} href="">Crew</a></li>
-                    <li className={navbarStyles.navListItem}><a className={navbarStyles.navListLink} href="">Technology</a></li>
+                    <li className={navbarStyles.navListItem}>
+                        <a className={navbarStyles.navListLink} href="">Home</a>
+                    </li>
+                    <li className={navbarStyles.navListItem}>
+                        <a className={navbarStyles.navListLink} href="">Destination</a>
+                    </li>
+                    <li className={navbarStyles.navListItem}>
+                        <a className={navbarStyles.navListLink} href="">Crew</a>
+                    </li>
+                    <li className={navbarStyles.navListItem}>
+                        <a className={navbarStyles.navListLink} href="">Technology</a>
+                    </li>
                 </ul>
             </nav>
             <BtnNavToggle 
