@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@0;1&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&display=swap');
+
 .navbarContainer {
     /* border: 1px solid red; */
     background-color: gray;
@@ -30,18 +32,28 @@
 .navList {
     padding: 15vh 0 0 15%;
     list-style: none;
-    counter-set: nav-counter;
+    counter-reset: nav-counter -1;
 }
 
 .navListLink {
+    margin: 12% 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    
     color: var(--starry-white);
-    /* font-family: "Barlow Condensed, sans-serif"; */
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    
 }
 
 .navListLink::before {
-
+    /* border: 1px solid red; */
+    display: block;
+    margin: 0 10px 0 0;
+    width: 35px;
     counter-increment: nav-counter;
     content: "0"counter(nav-counter);
 
