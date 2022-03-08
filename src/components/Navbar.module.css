@@ -2,7 +2,7 @@
 
 .navbarContainer {
     /* border: 1px solid red; */
-    background-color: gray;
+    /* background-color: gray; */
     width: 90%;
     height: 10%;
     padding: 5%;
@@ -22,7 +22,7 @@
     background-color: hsl(0, 0%, 100%, 0.1);
     backdrop-filter: blur(10px);
     height: 100vh;
-    width: 70%;
+    width: 65%;
     display: block;
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@
 }
 
 .navList {
-    padding: 15vh 0 0 15%;
+    padding: 12vh 0 0 15%;
     list-style: none;
     counter-reset: nav-counter -1;
 }
@@ -52,7 +52,6 @@
 .navListLink::before {
     /* border: 1px solid red; */
     display: block;
-    margin: 0 10px 0 0;
     width: 35px;
     counter-increment: nav-counter;
     content: "0"counter(nav-counter);
