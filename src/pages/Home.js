@@ -1,7 +1,6 @@
 import React from "react";
 import homeStyles from "./Home.module.css";
 
-import SectionHero from "../components/SectionHero";
 import BtnCTA from '../components/BtnCTA';
 
 const Home = () => {

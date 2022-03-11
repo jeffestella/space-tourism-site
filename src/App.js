@@ -12,16 +12,16 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
     return (
-        <BrowserRouter className={appStyles.appContainer}>
-            {/* <div className={appStyles.appContainer}> */}
+        <BrowserRouter>
+            <div className={appStyles.appContainer}>
                 <Navbar />
-            {/* </div> */}
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/destination" element={<Destination />} />
-                <Route path="/crew" element={<Crew />} />
-                <Route path="/technology" element={<Technology />} />
-            </Routes>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/destination" element={<Destination />} />
+                    <Route path="/crew" element={<Crew />} />
+                    <Route path="/technology" element={<Technology />} />
+                </Routes>
+            </div>
         </BrowserRouter>
     );
 }
