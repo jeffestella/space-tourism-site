@@ -1,5 +1,5 @@
-import React from 'react';
-import btnCTAStyles from './BtnCTA.module.css';
+import React from "react";
+import btnCTAStyles from "./BtnCTA.module.css";
 
 const BtnCTA = () => {
     return (

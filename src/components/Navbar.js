@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import navbarStyles from "./Navbar.module.css";
 
+import { Link } from "react-router-dom";
 import BtnNavToggle from './BtnNavToggle';
 import logo from "../assets/shared/logo.svg";
 

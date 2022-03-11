@@ -1,0 +1,41 @@
+.homeMain {
+    /* border: 1px solid red; */
+    width: 100%;
+    min-height: 75vh;
+    margin: 5% 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.heroCopy {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.heroHeadline {
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    font-weight: 300;
+    color: var(--dusty-lavender);
+}
+
+.heroHeadlineSpace {
+    font-family: "Bellefair", serif;
+    font-size: 5rem;
+}
+
+.heroBodyCopy {
+    width: 90%;
+    color: var(--dusty-lavender);
+    font-size: 15;
+    text-align: center;
+    line-height: 1.5rem;
+}
