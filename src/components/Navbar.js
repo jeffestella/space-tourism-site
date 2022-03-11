@@ -14,16 +14,35 @@ const Navbar = () => {
             <nav className={`${navOpen ? navbarStyles.navbar : navbarStyles.hidden }`}>
                 <ul className={navbarStyles.navList}>
                     <li className={navbarStyles.navListItem}>
-                        <Link to="/" className={navbarStyles.navListLink} href="">Home</Link>
+                        <Link 
+                            to="/" 
+                            className={navbarStyles.navListLink} 
+                            href=""
+                            onClick={() => {setNavOpen(false)}}>Home
+                        </Link>
                     </li>
                     <li className={navbarStyles.navListItem}>
-                        <Link to="/destination" className={navbarStyles.navListLink} href="">Destination</Link>
+                        <Link 
+                            to="/destination" 
+                            className={navbarStyles.navListLink} href=""
+                            onClick={() => {setNavOpen(false)}}>Destination
+                        </Link>
                     </li>
                     <li className={navbarStyles.navListItem}>
-                        <Link to="/crew" className={navbarStyles.navListLink} href="">Crew</Link>
+                        <Link 
+                            to="/crew" 
+                            className={navbarStyles.navListLink} 
+                            href=""
+                            onClick={() => {setNavOpen(false)}}>Crew
+                        </Link>
                     </li>
                     <li className={navbarStyles.navListItem}>
-                        <Link to="/technology" className={navbarStyles.navListLink} href="">Technology</Link>
+                        <Link 
+                            to="/technology" 
+                            className={navbarStyles.navListLink}
+                            href=""
+                            onClick={() => {setNavOpen(false)}}>Technology
+                        </Link>
                     </li>
                 </ul>
             </nav>
