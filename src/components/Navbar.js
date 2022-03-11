@@ -14,16 +14,16 @@ const Navbar = () => {
             <nav className={`${navOpen ? navbarStyles.navbar : navbarStyles.hidden }`}>
                 <ul className={navbarStyles.navList}>
                     <li className={navbarStyles.navListItem}>
-                        <a className={navbarStyles.navListLink} href="">Home</a>
+                        <Link to="/" className={navbarStyles.navListLink} href="">Home</Link>
                     </li>
                     <li className={navbarStyles.navListItem}>
-                        <a className={navbarStyles.navListLink} href="">Destination</a>
+                        <Link to="/destination" className={navbarStyles.navListLink} href="">Destination</Link>
                     </li>
                     <li className={navbarStyles.navListItem}>
-                        <a className={navbarStyles.navListLink} href="">Crew</a>
+                        <Link to="/crew" className={navbarStyles.navListLink} href="">Crew</Link>
                     </li>
                     <li className={navbarStyles.navListItem}>
-                        <a className={navbarStyles.navListLink} href="">Technology</a>
+                        <Link to="/technology" className={navbarStyles.navListLink} href="">Technology</Link>
                     </li>
                 </ul>
             </nav>
