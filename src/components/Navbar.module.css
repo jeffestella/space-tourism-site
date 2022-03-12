@@ -6,7 +6,7 @@
     width: clamp(200px, 90%, 600px);
     height: 40px;
 
-    margin: 5% auto;
+    margin: 20px auto;
 
     /* position: relative; */
     position: fixed;
