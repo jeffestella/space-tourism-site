@@ -1,8 +1,15 @@
-.appContainer {
+/* .appContainer {
     width: 100%;
     min-height: 100vh;
     background: url("./assets/home/background-home-mobile.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
+} */
 
+.appContainer {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}

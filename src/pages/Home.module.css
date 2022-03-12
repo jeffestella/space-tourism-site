@@ -1,11 +1,16 @@
 .homeMain {
     /* border: 1px solid red; */
     width: 100%;
-    min-height: 75vh;
-    margin: 5% 0 0;
+    min-height: 100vh;
+    padding: 40px 1% 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+
+    background: url("../assets/home/background-home-mobile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
 }
 
 .heroCopy {

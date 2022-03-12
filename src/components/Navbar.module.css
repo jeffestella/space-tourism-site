@@ -3,14 +3,17 @@
 .navbarContainer {
     /* border: 1px solid red; */
     /* background-color: gray; */
-    width: 90%;
-    height: 10%;
-    padding: 5%;
+    width: clamp(200px, 90%, 600px);
+    height: 40px;
+
+    margin: 5% auto;
+
+    /* position: relative; */
+    position: fixed;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-
-    position: relative;
 
 }
 

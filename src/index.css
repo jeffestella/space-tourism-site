@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@0;1&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&display=swap');
 
 :root {
+  width: 100vw;
+
   --space-black: hsl(230, 35%, 7%);
   --dusty-lavender: hsl(231, 77%, 90%);
   --starry-white: hsl(0, 0%, 100%);
