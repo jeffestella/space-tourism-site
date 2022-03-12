@@ -1,11 +1,12 @@
 .homeMain {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
-    height: calc(100vh - 80px);
+    height: clamp(500px, calc(100vh - 80px), 1000px);
     padding: calc(80px) 1% 0;
+
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     background: url("../assets/home/background-home-mobile.jpg");
     background-size: 100% 100%;
@@ -16,7 +17,8 @@
 .heroCopy {
     /* border: 1px solid blue; */
     width: 100%;
-    height: 40vh;
+    height: clamp(270px, 40vh, 400px);
+    /* height: 40vh; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -38,9 +40,9 @@
 }
 
 .heroBodyCopy {
-    width: 90%;
+    width: 85%;
     color: var(--dusty-lavender);
-    font-size: 15;
+    font-size: 15px;
     text-align: center;
     line-height: 1.5rem;
 }
