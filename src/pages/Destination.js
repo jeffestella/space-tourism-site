@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import destinationStyles from './Destination.module.css';
 
 import imageMoon from "../assets/destination/image-moon.png";
 
 const Destination = () => {
+    const destList = {
+    moon: "See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting Luna 2 and Apollo 11 landing sites.",
+    mars: "",
+    europa: "",
+    titan: ""
+    }
+
+    const [currentDest, setCurrentDest] = useState(destList.moon);
+
     return (
         <main className={destinationStyles.destinationMain}>
                 <h1 className={destinationStyles.headerPick}>01 Pick Your Destination</h1>
