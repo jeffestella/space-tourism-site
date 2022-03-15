@@ -13,6 +13,16 @@
     background-repeat: no-repeat;
 }
 
+.headerPick {
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: capitalize;
+}
+
+.headerPickIndex {
+    color: gray;
+    font-weight: bold;
+}
+
 .photoSelect {
     border: 1px solid red;
     width: 100%;

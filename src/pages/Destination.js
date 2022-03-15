@@ -15,7 +15,7 @@ const Destination = () => {
 
     return (
         <main className={destinationStyles.destinationMain}>
-                <h1 className={destinationStyles.headerPick}>01 Pick Your Destination</h1>
+                <h1 className={destinationStyles.headerPick}><span className={destinationStyles.headerPickIndex}>01</span> PICK YOUR DESTINATION</h1>
                 <figure className={destinationStyles.photoSelect}>
                     <img src={imageMoon} alt="photo of moon" className={destinationStyles.photoSelectImg}/>
                     <figcaption className={destinationStyles.photoSelectCaption}>
