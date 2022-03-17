@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import destinationStyles from './Destination.module.css';
+import destStyles from './Destination.module.css';
 
 import imageMoon from "../assets/destination/image-moon.png";
 import imageMars from "../assets/destination/image-mars.png";
@@ -49,46 +49,58 @@ const Destination = () => {
             }
         }
     ]
-
+    
+    const [currentDest, setCurrentDest] = useState(destData[0]);
+    
     const destMenu = destData.map((dest) => {
         return (
             <li 
-                className={destinationStyles.photoSelectMenuItem}
-                onClick={() => setCurrentDest(dest)}
+            onClick={() => setCurrentDest(dest)}
+            className={`${destStyles.photoSelectMenuItem}
+            ${dest === currentDest ?
+                destStyles.currentDest : 
+                ""}
+                `}
                 key={dest.name}
-            >
+                >
                 {dest.name}
             </li>
         )
     })
 
-    const [currentDest, setCurrentDest] = useState(destData[0]);
-
     return (
-        <main className={destinationStyles.destinationMain}>
-                <h1 className={destinationStyles.headerPick}><span className={destinationStyles.headerPickIndex}>01</span> PICK YOUR DESTINATION</h1>
-                <figure className={destinationStyles.photoSelect}>
-                    <img src={currentDest.photo.file} alt={currentDest.photo.alt} className={destinationStyles.photoSelectImg}/>
-                    <figcaption className={destinationStyles.photoSelectCaption}>
-                        <ul className={destinationStyles.photoSelectMenu}>
+        <main className={destStyles.destinationMain}>
+                <h1 className={destStyles.headerPick}><span className={destStyles.headerPickIndex}>01</span> PICK YOUR DESTINATION</h1>
+                <figure className={destStyles.photoSelect}>
+                    <img 
+                        src={currentDest.photo.file} 
+                        alt={currentDest.photo.alt} 
+                        className={destStyles.photoSelectImg}
+                    />
+                    <figcaption className={destStyles.photoSelectCaption}>
+                        <ul className={destStyles.photoSelectMenu}>
                             {destMenu}
                         </ul>
                     </figcaption>
                 </figure>
-                <section className={destinationStyles.card}>
-                    <header className={destinationStyles.cardName}>
+                <section className={destStyles.card}>
+                    <header className={destStyles.cardName}>
                         {currentDest.name}
                     </header>
-                    <p className={destinationStyles.cardBody}>
+                    <p className={destStyles.cardBody}>
                         {currentDest.blurb}
                     </p>
                 </section>
-                <hr />
-                <section className={destinationStyles.stats}>
-                    <h2 className={destinationStyles.statsMetric}>Avg. Distance</h2>
-                    <p className={destinationStyles.statsValue}>{currentDest.distance}</p>
-                    <h2>Est. Travel Time</h2>
-                    <p>{currentDest.travelTime}</p>
+                <hr className={destStyles.hrBreak}/>
+                <section className={destStyles.stats}>
+                    <article className={destStyles.statsCard}>
+                        <h2 className={destStyles.statsMetric}>AVG. DISTANCE</h2>
+                        <p className={destStyles.statsValue}>{currentDest.distance}</p>
+                    </article>
+                    <article className={destStyles.statsCard}>
+                        <h2 className={destStyles.statsMetric}>EST. TRAVEL TIME</h2>
+                        <p className={destStyles.statsValue}>{currentDest.travelTime}</p>
+                    </article>
                 </section>
 
         </main>

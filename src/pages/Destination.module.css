@@ -5,7 +5,7 @@
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     
     background: url("../assets/destination/background-destination-mobile.jpg");
@@ -14,8 +14,11 @@
 }
 
 .headerPick {
+    margin: 0 0 3%;
     font-family: "Barlow Condensed", sans-serif;
     text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
 }
 
 .headerPickIndex {
@@ -24,9 +27,9 @@
 }
 
 .photoSelect {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
-    min-height: 225px;
+    height: clamp(225px, 25vh, 400px);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -52,4 +55,73 @@
     align-items: center;
 
     list-style: none;
+}
+
+.photoSelectMenuItem {
+    border-bottom: 2px solid hsl(0,0,0,0);
+    font-size: 0.875rem;
+    color: var(--dusty-lavender);
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2.7px;
+    cursor: pointer;
+}
+
+.currentDest {
+    border-bottom: 2px solid var(--starry-white);
+}
+
+.card {
+    height: clamp(225px, 25vh, 400px);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardName {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Bellefair", serif;
+}
+
+.cardBody {
+    padding: 0 6%;
+    height: clamp(50px, 15vh, 200px);
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Barlow", sans-serif;
+    color: var(--dusty-lavender);
+    line-height: 1.6rem;
+}
+
+.hrBreak {
+    border-top: 0.5px solid var(--starry-white);
+    margin: 7% 0;
+    width: 85%;
+}
+
+.statsCard {
+    /* border: 1px solid red; */
+    height: clamp(60px, 10vh, 100px);
+    margin: 5% 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.statsMetric {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 2.36px;
+    color: var(--dusty-lavender);
+    text-align: center;
+    
+}
+
+.statsValue {
+    font-size: 1.75rem;
+    font-family: "Bellefair", serif;
+    text-align: center;
 }
