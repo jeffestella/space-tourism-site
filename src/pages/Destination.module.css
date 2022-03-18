@@ -1,6 +1,6 @@
 .destinationMain {
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     padding: calc(80px) 1% 0;
 
     display: flex;
@@ -29,7 +29,7 @@
 .photoSelect {
     /* border: 1px solid red; */
     width: 100%;
-    height: clamp(225px, 25vh, 400px);
+    height: 235px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -71,7 +71,9 @@
 }
 
 .card {
-    height: clamp(225px, 25vh, 400px);
+    /* border: 1px solid red; */
+    /* height: clamp(225px, 25vh, 400px); */
+    height: 230px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -80,6 +82,7 @@
 }
 
 .cardName {
+    /* border: 1px solid blue; */
     text-align: center;
     font-size: 3.5rem;
     font-family: "Bellefair", serif;
@@ -101,9 +104,13 @@
     width: 85%;
 }
 
+.stats {
+    padding: 0 0 10%;
+}
+
 .statsCard {
     /* border: 1px solid red; */
-    height: clamp(60px, 10vh, 100px);
+    height: 100px;
     margin: 5% 0;
 
     display: flex;
