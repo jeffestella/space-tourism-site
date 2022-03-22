@@ -49,7 +49,7 @@ const Crew = () => {
     const [currentMember, setCurrentMember] = useState(crewData[0]);
     return (
         <main className={crewStyles.crewMain}>
-            <h1 className={crewStyles.headerPick}><span className={crewStyles.headerPickIndex}>01</span> PICK YOUR DESTINATION</h1>
+            <h1 className={crewStyles.headerMeet}><span className={crewStyles.headerMeetIndex}>02</span> MEET YOUR CREW</h1>
             <figure className={crewStyles.photoSelect}>
                 <img
                     src={currentMember.photo.file}

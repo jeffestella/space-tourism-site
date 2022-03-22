@@ -1,0 +1,44 @@
+.crewMain {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: calc(80px) 1% 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.crewMain::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url("../assets/crew/background-crew-mobile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.headerMeet {
+    margin: 0 0 3%;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+}
+
+.headerMeetIndex{
+    color: gray;
+    font-weight: bold;
+}
+
+.photoSelectImg {
+    width: 50%;
+}
