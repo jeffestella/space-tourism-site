@@ -47,6 +47,17 @@ const Crew = () => {
     ];
 
     const [currentMember, setCurrentMember] = useState(crewData[0]);
+
+    const crewButtons = crewData.map((member) => {
+        return <input 
+            className={crewStyles.radioBtn} 
+            type="radio" 
+            value={member}
+            checked={currentMember === member}
+            onChange={(e) => setCurrentMember(e.value)}
+            key={member.name}/>
+    })
+
     return (
         <main className={crewStyles.crewMain}>
             <h1 className={crewStyles.headerMeet}><span className={crewStyles.headerMeetIndex}>02</span> MEET YOUR CREW</h1>
@@ -56,9 +67,10 @@ const Crew = () => {
                     alt={currentMember.photo.alt}
                     className={crewStyles.photoSelectImg}
                 />
+                <hr />
                 <figcaption className={crewStyles.photoSelectCaption}>
                     <ul className={crewStyles.photoSelectMenu}>
-                        RADIO BUTTONS HERE
+                        {crewButtons}
                     </ul>
                 </figcaption>
             </figure>
