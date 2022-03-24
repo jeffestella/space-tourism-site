@@ -75,23 +75,13 @@ const Crew = () => {
                 </figcaption>
             </figure>
             <section className={crewStyles.card}>
-                <header className={crewStyles.cardName}>
-                    {currentMember.name}
+                <header>
+                    <p className={crewStyles.cardTitle}>{currentMember.title}</p>
+                    <p className={crewStyles.cardName}>{currentMember.name}</p>
                 </header>
                 <p className={crewStyles.cardBody}>
                     {currentMember.blurb}
                 </p>
-            </section>
-            <hr className={crewStyles.hrBreak} />
-            <section className={crewStyles.stats}>
-                <article className={crewStyles.statsCard}>
-                    <h2 className={crewStyles.statsMetric}>AVG. DISTANCE</h2>
-                    <p className={crewStyles.statsValue}>{currentMember.distance}</p>
-                </article>
-                <article className={crewStyles.statsCard}>
-                    <h2 className={crewStyles.statsMetric}>EST. TRAVEL TIME</h2>
-                    <p className={crewStyles.statsValue}>{currentMember.travelTime}</p>
-                </article>
             </section>
         </main>
     );

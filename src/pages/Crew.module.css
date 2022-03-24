@@ -57,3 +57,33 @@
     width: 90%;
     opacity: 0.2;
 }
+
+.card {
+    border: 1px solid red;
+    height: 230px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTitle{
+    font-family: "Bellefair", sans-serif;
+    color: gray;
+    text-align: center;
+}
+
+.cardName {
+    font-family: "Bellefair", sans-serif;
+    color: var(--starry-white);
+    font-size: 1.5rem;
+}
+
+.cardBody {
+    font-size: 0.93rem;
+    color: var(--dusty-lavender);
+    width: 90%;
+    text-align: center;
+    line-height: 1.3rem;
+}
