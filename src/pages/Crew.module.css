@@ -41,7 +41,7 @@
 
 .photoSelect {
     width: 100%;
-    height: 235px;
+    min-height: 300px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -52,6 +52,20 @@
     width: 50%;
 }
 
+.photoSelectCaption {
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 30%;
+}
+
+.photoSelectMenu {
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .photoSelect hr {
     border-top: 0.5px solid gray;
     width: 90%;
@@ -59,22 +73,24 @@
 }
 
 .card {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 230px;
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.cardTitle{
+.cardTitle {
+    margin: 2% 0;
     font-family: "Bellefair", sans-serif;
     color: gray;
     text-align: center;
 }
 
 .cardName {
+    margin: 5% 0;
     font-family: "Bellefair", sans-serif;
     color: var(--starry-white);
     font-size: 1.5rem;
@@ -85,5 +101,5 @@
     color: var(--dusty-lavender);
     width: 90%;
     text-align: center;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
