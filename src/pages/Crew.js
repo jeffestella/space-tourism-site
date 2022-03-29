@@ -49,20 +49,10 @@ const Crew = () => {
     const [currentMember, setCurrentMember] = useState(crewData[0]);
 
     const crewButtons = crewData.map((member) => {
-        // return <input 
-        //     className={crewStyles.radioBtn} 
-        //     type="radio" 
-        //     value={member}
-        //     checked={currentMember === member}
-        //     onChange={() => setCurrentMember(member)}
-        //     key={member.name}/>
-
-            return <div
-            className={`${crewStyles.crewBtn} 
-            ${currentMember === member ?
-                crewStyles.activeCrewBtn :
-                ""
-            }`}  
+        return <div
+            className={`${crewStyles.crewBtn} ${
+                currentMember.name === member.name ?
+                crewStyles.activeCrewBtn : "" }`}
             onClick={() => setCurrentMember(member)}
             key={member.name}></div>
     })
