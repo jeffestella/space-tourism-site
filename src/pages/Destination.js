@@ -57,10 +57,8 @@ const Destination = () => {
             <li 
             onClick={() => setCurrentDest(dest)}
             className={`${destStyles.photoSelectMenuItem}
-            ${dest === currentDest ?
-                destStyles.currentDest : 
-                ""}
-                `}
+            ${dest.name === currentDest.name ?
+                destStyles.currentDest : ""}`}
                 key={dest.name}
                 >
                 {dest.name}
@@ -102,7 +100,6 @@ const Destination = () => {
                         <p className={destStyles.statsValue}>{currentDest.travelTime}</p>
                     </article>
                 </section>
-
         </main>
     );
 }
