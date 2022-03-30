@@ -44,6 +44,18 @@ const Technology = () => {
 
     const [currentTech, setCurrentTech] = useState(techData[0]);
 
+    const techButtons = techData.map((tech) => {
+        return <div 
+            className={`${technologyStyles.techBtn} ${
+                currentTech.name === tech.name ?
+                technologyStyles.activeTechBtn : "" }`}
+            onClick={()=> {setCurrentTech(tech)}}
+            key={tech.name}
+            >
+                {tech.num}
+        </div>
+    })
+
     return (
         <main className={technologyStyles.main}>
             <h1 className={technologyStyles.headerSpace}><span className={technologyStyles.headerSpaceIndex}>03</span> SPACE LAUNCH 101</h1>
@@ -55,7 +67,7 @@ const Technology = () => {
                 />
                 <figcaption className={technologyStyles.photoSelectCaption}>
                     <ul className={technologyStyles.photoSelectMenu}>
-                        TechButtons
+                        {techButtons}
                     </ul>
                 </figcaption>
             </figure>
