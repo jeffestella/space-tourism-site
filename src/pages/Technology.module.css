@@ -1,0 +1,108 @@
+.techMain {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: calc(80px) 1% 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.techMain::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url("../assets/technology/background-technology-mobile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.headerSpace {
+    margin: 0 0 3%;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+}
+
+.headerSpaceIndex {
+    color: gray;
+    font-weight: bold;
+}
+
+.photoSelect {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photoSelectImg {
+    /* width: 50%; */
+    height: 250px;
+}
+
+.photoSelectCaption {
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 30%;
+}
+
+.photoSelectMenu {
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.techBtn {
+    height: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: gray;
+
+    cursor: pointer;
+}
+
+.card {
+    /* border: 1px solid red; */
+    height: 230px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardTerminology {
+    margin: 2% 0;
+    font-family: "Bellefair", sans-serif;
+    color: gray;
+    text-align: center;
+}
+
+.cardName {
+    margin: 5% 0;
+    font-family: "Bellefair", sans-serif;
+    color: var(--starry-white);
+    font-size: 1.5rem;
+}
+
+.cardBody {
+    font-size: 0.93rem;
+    color: var(--dusty-lavender);
+    width: 90%;
+    text-align: center;
+    line-height: 1.5rem;
+}

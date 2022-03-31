@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import technologyStyles from './Destination.module.css';
+import technologyStyles from './Technology.module.css';
 
 import imageLaunchVehicleL from '../assets/technology/image-launch-vehicle-landscape.jpg';
 import imageLaunchVehicleP from '../assets/technology/image-launch-vehicle-portrait.jpg';
@@ -57,7 +57,7 @@ const Technology = () => {
     })
 
     return (
-        <main className={technologyStyles.main}>
+        <main className={technologyStyles.techMain}>
             <h1 className={technologyStyles.headerSpace}><span className={technologyStyles.headerSpaceIndex}>03</span> SPACE LAUNCH 101</h1>
             <figure className={technologyStyles.photoSelect}>
                 <img 
@@ -76,7 +76,7 @@ const Technology = () => {
                     <p className={technologyStyles.cardTerminology}>THE TERMINOLOGY...</p>
                     <p className={technologyStyles.cardName}>{currentTech.name}</p>
                 </header>
-                <p>{currentTech.blurb}</p>
+                <p className={technologyStyles.cardBody}>{currentTech.blurb}</p>
             </section>
         </main>
     );
