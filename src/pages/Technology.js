@@ -27,7 +27,7 @@ const Technology = () => {
             photo: {
                 landscape: imageSpaceportL,
                 portrait: imageSpaceportP,
-                alt: "A rocket taking off"
+                alt: "A spaceport"
             }
         },
         {
