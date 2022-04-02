@@ -22,14 +22,17 @@
 }
 
 .navbar {
-    background-color: hsl(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(1000px);
+    background-color: hsl(230, 35%, 7%, 0.97);
+    /*NOTE: backdrop-filter has minimal browser support,
+    does not currently work with Firefox*/
+    /* backdrop-filter: blur(10000px); */
     height: 100vh;
     width: 65%;
     display: block;
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 .navList {
@@ -50,6 +53,10 @@
     letter-spacing: 0.15rem;
     text-decoration: none;
     
+}
+
+.currentPage {
+    border-right: 4px solid var(--starry-white);
 }
 
 .navListLink::before {
