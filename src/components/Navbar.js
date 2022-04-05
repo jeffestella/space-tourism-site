@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import navbarStyles from "./Navbar.module.css";
 
 import { Link } from "react-router-dom";
@@ -24,21 +25,20 @@ const Navbar = () => {
             name: "Technology",
             slug:"/technology"
         },
-    ]
+    ];
 
-    const [currentPage, setCurrentPage] = useState(pages[0])
     const [navOpen, setNavOpen] = useState(false);
+    const currentSlug = useLocation();
 
     const navLinks = pages.map((page) => {
         return <li className={navbarStyles.navListItem}>
             <Link
                 to={page.slug}
                 className={`${navbarStyles.navListLink} ${
-                    currentPage.name === page.name ?
+                    currentSlug.pathname === page.slug ?
                     navbarStyles.currentPage : ""}`}
                 href=""
                 onClick={() => {
-                    setCurrentPage(page);
                     setNavOpen(false)}}
             >{page.name}</Link>
         </li>
