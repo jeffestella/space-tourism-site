@@ -14,9 +14,9 @@ The design system is provided in the Figma file located in `/design/space-touris
 - Bellefair
 
 ## Breakpoints
-- Mobile: max 600px (design for 375px)
-- Tablet: max 991px (design for 768px)
-- Desktop: >=992px (design for 1440px)
+- Mobile: design for 375px+
+- Tablet: design for 768px+
+- Desktop: >=981px, design for 1440px
 
 
 

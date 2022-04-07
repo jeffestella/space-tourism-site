@@ -29,7 +29,7 @@
 .photoSelect {
     /* border: 1px solid red; */
     width: 100%;
-    height: 235px;
+    height: 230px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -55,6 +55,7 @@
     align-items: center;
 
     list-style: none;
+    z-index: 2;
 }
 
 .photoSelectMenuItem {
@@ -64,6 +65,8 @@
     font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 2.7px;
     cursor: pointer;
+
+    z-index: 2;
 }
 
 .currentDest {
@@ -73,11 +76,11 @@
 .card {
     /* border: 1px solid red; */
     /* height: clamp(225px, 25vh, 400px); */
-    height: 230px;
+    height: 250px;
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
