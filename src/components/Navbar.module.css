@@ -79,14 +79,31 @@
     }
 
     .navList {
-        border: 1px solid red;
-        width: 55vw;
-        
+        /* border: 1px solid red; */
+
+        padding: 0;
+        width: 60vw;
+        height: 75px;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: stretch;
 
+        background-color: var(--space-black);
+    }
+
+    .navListItem {
+        border: 1px solid red;
+        height: 100%;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
     }
 
     .hidden {
@@ -95,5 +112,10 @@
 
     .navListLink::before {
         display: none;
+    }
+
+    .currentPage {
+        border-right: none;
+        border-bottom: 4px solid var(--starry-white);
     }
 }
