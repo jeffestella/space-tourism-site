@@ -31,12 +31,11 @@ const Navbar = () => {
     const currentSlug = useLocation();
 
     const navLinks = pages.map((page) => {
-        return <li className={navbarStyles.navListItem}>
+        return <li className={`${navbarStyles.navListItem} ${currentSlug.pathname === page.slug ?
+                navbarStyles.currentPage : ""}`}>
             <Link
                 to={page.slug}
-                className={`${navbarStyles.navListLink} ${
-                    currentSlug.pathname === page.slug ?
-                    navbarStyles.currentPage : ""}`}
+                className={navbarStyles.navListLink}
                 href=""
                 onClick={() => {
                     setNavOpen(false)}}

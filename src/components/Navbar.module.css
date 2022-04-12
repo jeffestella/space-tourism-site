@@ -71,10 +71,10 @@
 
 @media screen and (min-width: 768px) {
     .navbar {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         display: flex;
         flex-flow: column nowrap;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
     }
 
@@ -98,12 +98,19 @@
     }
 
     .navListItem {
-        border: 1px solid red;
-        height: 100%;
+        /* border: 1px solid blue; */
+        height: 75px;
+        /* border-bottom: 4px solid hsl(0,0,0,0); */
 
         display: flex;
-        flex-flow: row nowrap;
-        align-items: stretch;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .currentPage {
+        border-right: none;
+        border-bottom: 4px solid var(--starry-white);
     }
 
     .hidden {
@@ -114,8 +121,4 @@
         display: none;
     }
 
-    .currentPage {
-        border-right: none;
-        border-bottom: 4px solid var(--starry-white);
-    }
 }
