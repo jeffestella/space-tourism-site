@@ -54,6 +54,9 @@
         background-position-y: bottom 40%;
     }
 
+    .heroCopy {
+        height: clamp(270px, 35vh, 400px);
+    }
     .heroHeadline {
         font-size: 20px;
     }

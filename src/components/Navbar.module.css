@@ -70,6 +70,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .navbarContainer > img {
+        position: fixed;
+        left: 5%;
+    }
     .navbar {
         /* border: 1px solid green; */
         display: flex;
