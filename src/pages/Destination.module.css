@@ -135,3 +135,19 @@
     font-family: "Bellefair", serif;
     text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+    .headerPick {
+        align-self: flex-start;
+    }
+
+    .stats {
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+
+    .statsCard {
+        
+    }
+}
