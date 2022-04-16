@@ -8,7 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     
-    background: url("../assets/destination/background-destination-mobile.jpg");
+    background: url("../assets/destination/background-destination-tablet.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -141,13 +141,39 @@
         align-self: flex-start;
     }
 
+    .photoSelect {
+        /* border: 1px solid red; */
+        height: 350px;
+    }
+
+    .photoSelectCaption {
+        /* border: 1px solid white; */
+        width: 50%;
+    }
+
+    .photoSelectMenuItem {
+        height: 25px;
+    }
+
+    .cardBody {
+        /* border: 1px solid white; */
+        padding: 0;
+        width: 75%;
+        height: clamp(50px, 50%, 200px);
+        line-height: 1.7rem;
+    }
     .stats {
+        /* border: 1px solid red; */
+        padding: 0;
+        width: 50%;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
 
     }
 
     .statsCard {
-        
+
     }
 }
